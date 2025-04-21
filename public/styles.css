@@ -1,0 +1,78 @@
+h1 {
+  color: var(--color-headings);
+  background-color: var(--color-bg);
+  font-family: "Gloria Hallelujah", sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2em;
+  align-items: center;
+  padding: 0 1em;
+  margin-top: 0;
+}
+h1 nav {
+  font-size: medium;
+}
+h2,
+h3,
+h4 {
+  color: var(--color-headings);
+  background-color: var(--color-bg);
+  font-family: "Gloria Hallelujah", sans-serif;
+  padding: 0em 1em;
+  margin: 0;
+  overflow-y: auto;
+}
+img {
+  width: 100%;
+}
+p {
+  color: var(--color-sectext);
+  padding-left: 1em;
+}
+body {
+  background-color: #dbabd9;
+  font-family: "Delius Swash Caps", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+a {
+  color: #e13000;
+  font-family: "Audiowide", sans-serif;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 30% 60%;
+  gap: 5em;
+  padding: 0px 5em 0px 5em;
+}
+.contactinfo {
+  color: var(--color-sectext);
+  background-color: var(--color-secs);
+  width: 100%;
+}
+
+.contactinfo dl {
+  padding-left: 1em;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 1em;
+  overflow-y: auto;
+}
+
+.about {
+  height: 50vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  max-width: 100%;
+}
+.card {
+  color: var(--color-sectext);
+  background-color: var(--color-secs);
+  overflow-y: auto;
+  max-width: 80%;
+}
