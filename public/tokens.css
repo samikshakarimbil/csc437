@@ -1,6 +1,17 @@
 :root {
+  --color-site: white;
   --color-headings: #e113bd;
   --color-bg: #b3dbc0;
   --color-secs: #decac0;
   --color-sectext: #2526e0;
+  --color-links: #e13000;
+}
+
+body.dark-mode {
+  --color-site: black;
+  --color-headings: #51DBC0;
+  --color-bg: #A33995;
+  --color-secs: #C7A200;
+  --color-sectext: #310075;
+  --color-links: #51DBC0;
 }

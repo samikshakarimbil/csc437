@@ -10,6 +10,9 @@ h1 {
   padding: 0 1em;
   margin-top: 0;
 }
+button {
+  display: none;
+}
 h1 nav {
   font-size: medium;
 }
@@ -31,15 +34,19 @@ p {
   padding-left: 1em;
 }
 body {
-  background-color: #dbabd9;
-  font-family: "Delius Swash Caps", sans-serif;
+  background-color: var(--color-site);
+  font-family: "Delius", sans-serif;
   display: flex;
   flex-direction: column;
   gap: 1em;
 }
 a {
-  color: #e13000;
+  color: var(--color-links);
   font-family: "Audiowide", sans-serif;
+}
+
+label{
+  font-size: 25px;
 }
 
 .content {
@@ -75,4 +82,50 @@ a {
   background-color: var(--color-secs);
   overflow-y: auto;
   max-width: 80%;
+}
+
+.nav-hidden {
+  display: none;
+}
+
+#dark-mode-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  font-family: "Delius", sans-serif;
+  font-size: 0.5em;
+}
+
+@media (min-width: 786px) {
+  #menu-btn {
+    display: none;
+  }
+
+  #menu-links {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+  }
+}
+
+@media (max-width: 786px) {
+  h1 {
+    display: grid;
+    grid-template-columns: 2;
+    gap: 1em;
+  }
+  button {
+    display: block;
+    grid-column: 2;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  #dark-mode-toggle {
+    grid-column: 1;
+    grid-row: 2;
+    margin-left: 0.5em;
+  }
 }
