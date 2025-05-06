@@ -9,9 +9,9 @@
 
 body.dark-mode {
   --color-site: black;
-  --color-headings: #51DBC0;
-  --color-bg: #A33995;
-  --color-secs: #C7A200;
-  --color-sectext: #310075;
+  --color-bg: #000033;
+  --color-secs: #1a1a4d;
+  --color-headings: #ccffff;
+  --color-sectext: #ffccaa;
   --color-links: #51DBC0;
 }
