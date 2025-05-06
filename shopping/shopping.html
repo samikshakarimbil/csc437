@@ -10,24 +10,25 @@
     <header>
         <h1>Stupid Shopping Site</h1>
         <div class="searchbar">
-            <input placeholder="Search our stupid products" />
-            <button>Search</button>
+            <label for="searchInput"></label>
+            <input id="searchInput" placeholder="Search our stupid products" />
+            <button type="submit">Search</button>
         </div>
     </header>
     <main>
         <section>
             <h2>Filters</h2>
             <div class="filters">
-                <label>Min price ($)</label>
+                <label for="minPrice">Min price ($)</label>
                 <input id="minPrice" type="number" min="0"/>
-                <label>Max price ($)</label>
+                <label for="maxPrice">Max price ($)</label>
                 <input id="maxPrice" type="number" min="1" />
             </div>
         </section>
 
         <section class="product-list">
             <h2>Search results</h2>
-            <article>
+            <!-- <article>
                 <img src="https://placehold.co/200x200" alt="Shoes" />
                 <div class="product-details">
                     <h3>Shoes</h3>
@@ -53,7 +54,7 @@
                     <p class="price">$3</p>
                     <div><button class="buy-button">Add to cart</button></div>
                 </div>
-            </article>
+            </article> -->
         </section>
 
         <section class="cart">
